@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.ButtonGroup {
+  display: flex;
+  justify-content: center;
+}
+
+.todoStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 30rem;
+  width: 24rem;
+  gap: 1rem;
+  margin: auto;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 1.8rem;
+
+  &:nth-child(1) {
+    border-bottom: 1px solid #222;
+  }
+}
+.moreStyle {
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    color: blue;
+  }
+}
+.nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #3183ff;
+
+  .items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    a {
+      color: white;
+    }
+    color: white;
+    padding: 2rem;
+    button {
+      min-width: 10rem;
+      padding: 0.5rem 1rem;
+      border-radius: 1rem;
+      border: 0;
+      background-color: #002e74;
+    }
+  }
+}
+
+.formStyle,
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  width: 24rem;
+  gap: 1rem;
+  margin: auto;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 1.8rem;
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea,
+  button {
+    min-width: 10rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid #333;
+  }
+  button {
+    min-width: 10rem;
+    border: 0;
+    transition: 0.2s all;
+    background-color: rgb(42, 120, 255);
+    padding: 1rem;
+    border-radius: 2rem;
+    width: fit-content;
+    color: white;
+
+    &:hover {
+      color: white;
+      background-color: rgb(0, 94, 255);
+
+      transition: 0.2s all;
+      cursor: pointer;
+    }
+  }
+  .radio {
+    display: flex;
+    gap: 1rem;
+    padding-left: 3rem;
+  }
+}
