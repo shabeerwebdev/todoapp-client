@@ -1,5 +1,5 @@
-// export const url = "https://chaoo-todo-app.herokuapp.com/api";
-export const url = "http://localhost:8800/api";
+// export const url = "http://localhost:8800/api";
+export const url = "https://pink-wild-millipede.cyclic.app/api";
 
 export const setHeaders = () => {
   const headers = {
